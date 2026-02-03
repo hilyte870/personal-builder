@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitForge — Workout Plan Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>🏋️ FitForge</h1>
+    <p class="subtitle">Custom-engineered workout programming for your goals.</p>
+
+    <form id="form">
+        <div class="field">
+            <label>Goal</label>
+            <select id="goal">
+                <option value="strength">Strength</option>
+                <option value="muscle">Muscle</option>
+                <option value="fatloss">Fat Loss</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Level</label>
+            <select id="level">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Frequency</label>
+            <select id="days">
+                <option value="3">3 Days / Week</option>
+                <option value="4">4 Days / Week</option>
+                <option value="5">5 Days / Week</option>
+            </select>
+        </div>
+
+        <button type="submit">Generate Plan</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
